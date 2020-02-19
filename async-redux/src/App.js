@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>XKCD</h1>
+        <h1 className="header">XKCD</h1>
         <Comic />
         <ComicStrip />
       </div>

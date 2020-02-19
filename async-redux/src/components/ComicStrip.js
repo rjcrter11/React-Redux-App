@@ -7,21 +7,19 @@ const ComicStrip = (props) => {
       {props.error ? (
         <div className="error">{props.error}</div>
       ) : (
-        <div>
-          <h2> {props.comic.safe_title} </h2>
-          <h3>
-            {" "}
+        <div className="comic-container">
+          <h2 className="title"> {props.comic.safe_title} </h2>
+          <h3 className="date">
             Date: {props.comic.month} / {props.comic.day} / {props.comic.year}{" "}
           </h3>
           <div className="img-container">
-            {" "}
             <img
               src={props.comic.img}
               alt={props.comic.alt}
               title={props.comic.alt}
             />
-            <p> {props.comic.alt} </p>
           </div>
+          <p className="desc"> {props.comic.alt} </p>
         </div>
       )}
     </>
@@ -31,7 +29,8 @@ const ComicStrip = (props) => {
 const mapStateToProps = (state) => {
   return {
     comic: state.comic,
-    error: state.error
+    error: state.error,
+    fetchingData: state.fetchingData
   };
 };
 

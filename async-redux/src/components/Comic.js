@@ -14,17 +14,23 @@ const Comic = (props) => {
   return (
     <>
       {props.fetchingData ? (
-        <div>Fetching your comic</div>
+        <div className="loading">Fetching your comic</div>
       ) : (
-        <button onClick={handleGetData}>Get Daily Comic</button>
+        <div className="btn-container">
+          <button className="fetch-btn" onClick={handleGetData}>
+            Get Random Comic
+          </button>
+        </div>
       )}
     </>
   );
 };
 
 const mapStatetoProps = (state) => {
+  console.log(state);
   return {
-    fetchingData: state.fetchingData
+    fetchingData: state.fetchingData,
+    chooseComic: state.chooseComic
   };
 };
 
