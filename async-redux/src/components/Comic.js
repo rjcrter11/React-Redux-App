@@ -30,7 +30,7 @@ const mapStatetoProps = (state) => {
   console.log(state);
   return {
     fetchingData: state.fetchingData,
-    chooseComic: state.chooseComic
+    comic: state.comic
   };
 };
 
