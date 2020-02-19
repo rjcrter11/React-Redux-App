@@ -1,4 +1,4 @@
-import { FETCH_START } from "../actions";
+import { FETCH_START, FETCH_SUCCESS, FETCH_ERROR } from "../actions";
 
 const initialState = {
   fetchingData: false,
@@ -13,6 +13,18 @@ export const comicReducer = (state = initialState, action) => {
         ...state,
         fetchingData: true,
         comic: []
+      };
+    case FETCH_SUCCESS:
+      return {
+        ...state,
+        fetchingData: false,
+        comic: action.payload
+      };
+    case FETCH_ERROR:
+      return {
+        ...state,
+        fetchingData: false,
+        error: action.payload
       };
 
     default:

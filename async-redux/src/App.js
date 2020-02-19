@@ -5,6 +5,7 @@ import thunk from "redux-thunk";
 
 import { comicReducer as reducer } from "./reducers";
 import Comic from "./components/Comic";
+import ComicStrip from "./components/ComicStrip";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <h1>XKCD</h1>
         <Comic />
+        <ComicStrip />
       </div>
     </Provider>
   );
