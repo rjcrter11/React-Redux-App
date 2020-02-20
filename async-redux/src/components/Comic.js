@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { getData } from "../actions";
+import LoadingIcon from "../components/LoadingIcon";
 
 const Comic = (props) => {
   console.log(props);
@@ -14,7 +15,7 @@ const Comic = (props) => {
   return (
     <>
       {props.fetchingData ? (
-        <div className="loading">Fetching your comic</div>
+        <LoadingIcon />
       ) : (
         <div className="btn-container">
           <button className="fetch-btn" onClick={handleGetData}>

@@ -47,3 +47,14 @@
 div.error {
   color: red;
 }
+
+.fa-cog {
+  color: rgb(115, 144, 199);
+  font-size: 4rem;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: rgb(115, 144, 199);
+  margin: 1% 0;
+}
