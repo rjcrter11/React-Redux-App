@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: rgb(115, 144, 199);
+  color: white;
+  padding: 2% 0;
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+}
+
+.fetch-btn {
+  margin: 3% 0;
+  padding: 0.75% 1%;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(115, 144, 199);
+  background-color: rgba(236, 236, 236, 0.788);
+}
+
+.comic-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.img-container {
+  margin: 4% 0;
+  border: 2px solid black;
+}
+
+.img-container img {
+  padding: 5% 0;
+}
+
+.desc {
+  margin-bottom: 3%;
+}
+
+div.error {
+  color: red;
+}
+
+.fa-cog {
+  color: rgb(115, 144, 199);
+  font-size: 4rem;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: rgb(115, 144, 199);
+  margin: 1% 0;
+}
